@@ -37,7 +37,7 @@ class Artist
       self.all.detect { |name| Artist.name }
     end
 
-    if self.find_by_name(name) = true
+    if self.find_by_name(name) == true
       self.find_by_name
     else
       self.create_by_name(name)
