@@ -38,10 +38,11 @@ class Artist
     end
 
     if self.find_by_name.includes?(name)
-      self.find_by_name(name)
+      name = self.find_by_name(name)
       self.name
     else
-      self.create_by_name(name)
+      name = self.create_by_name.includes?(name)
+      self.name
     end
   end
 
