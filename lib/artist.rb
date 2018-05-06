@@ -10,7 +10,7 @@ class Artist
   end
 
   def self.all
-    @@all << self
+    @@all << self.name
   end
 
   def add_song(song)
