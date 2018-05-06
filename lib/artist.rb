@@ -32,6 +32,7 @@ class Artist
       name = self.new(name)
 
       self.name = name
+      self.name
     end
 
     def self.find_by_name(name)
