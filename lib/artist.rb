@@ -37,7 +37,7 @@ class Artist
       self.all.detect { |name| Artist.name }
     end
 
-    self.find_by_name(name) or self.create_by_name(name)
+    self.find_or_create_by_name(name)
   end
 
   def print_songs
