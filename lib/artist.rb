@@ -30,7 +30,7 @@ class Artist
     def self.create_by_name(name)
       artist = self.new(name)
       artist.save
-      artist
+      artist.name
     end
 
     def self.find_by_name(name)
