@@ -11,7 +11,7 @@ class Artist
   end
 
   def self.all
-    @@all 
+    @@all
   end
 
   def add_song(song)
@@ -38,7 +38,7 @@ class Artist
       self.all.detect { |name| self.name }
     end
 
-    if self.find_by_name.includes?(name)
+    if self.all.includes?(name)
       name = self.find_by_name(name)
       self.name
     else
