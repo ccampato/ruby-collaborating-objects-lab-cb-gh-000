@@ -42,7 +42,7 @@ class Artist
       name = self.find_by_name(name)
       self.name
     else
-      name = self.create_by_name.includes?(name)
+      name = self.create_by_name.include?(name)
       self.name
     end
   end
