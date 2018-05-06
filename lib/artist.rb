@@ -34,7 +34,7 @@ class Artist
     end
 
     def self.find_by_name(name)
-      self.all.detect { |name| Artist.name }
+      self.all.detect { |name| self.name }
     end
 
     if self.find_by_name.includes?(name)
