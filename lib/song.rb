@@ -1,5 +1,5 @@
 class Song
-  attr_accessor :title, :artist
+  attr_accessor :title, :artist, :filename
 
   def initialize(title)
     @title = title
@@ -18,7 +18,7 @@ class Song
       self.artist.song = Artist.new(name)
     else
       self.name.artist = name
-      self.song.artist 
+      self.song.artist
     end
   end
 
