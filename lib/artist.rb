@@ -30,14 +30,19 @@ class Artist
     def self.create_by_name(name)
       self.name = Artist.new(name)
       self.save
-      self.name
+      Artist.name
     end
 
     def self.find_by_name(name)
       self.all.detect { |name| Artist.name }
     end
 
-    self.find_or_create_by_name(name)
+    if self.find_by_name(name) = true
+      self.find_by_name
+    else
+      self.create_by_name(name)
+      self.create_by_name
+    end
   end
 
   def print_songs
