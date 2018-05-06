@@ -17,8 +17,8 @@ class Song
     if (self.artist.nil?)
       self.artist.song = Artist.new(name)
     else
-      self.artist.name = name
-      self.artist.song 
+      self.name.artist = name
+      self.song.artist 
     end
   end
 
