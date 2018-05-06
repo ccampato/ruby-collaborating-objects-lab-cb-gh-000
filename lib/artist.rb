@@ -12,8 +12,8 @@ class Artist
     @@all
   end
 
-  def add_song(song_name)
-    @songs << song_name
+  def add_song(Song)
+    @songs << Song
   end
 
   def songs
@@ -33,7 +33,7 @@ class Artist
     end
 
     def self.find_by_name(name)
-      self.all.detect { |artist| artist.name = name }
+      self.all.detect { |artist| name.artist = name }
     end
 
     self.find_by_name(name) or self.create_by_name(name)
